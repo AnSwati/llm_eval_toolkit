@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "response": "The capital of France is Paris, which is also the largest city in the country.",
+    "reference": "Paris is the capital of France."
+  },
+  {
+    "question": "Explain artificial intelligence",
+    "response": "Artificial intelligence is the simulation of human intelligence in machines that are programmed to think and learn.",
+    "reference": "AI is the simulation of human intelligence processes by machines, especially computer systems."
+  },
+  {
+    "question": "What is machine learning?",
+    "response": "Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed.",
+    "reference": "Machine learning is a method of data analysis that automates analytical model building using algorithms that iteratively learn from data."
+  }
+]

@@ -1,0 +1,12 @@
+torch>=1.9.0
+transformers>=4.20.0
+mauve-text>=0.3.0
+sacrebleu>=2.0.0
+rouge-score>=0.1.2
+bert-score>=0.3.13
+nltk>=3.7
+textstat>=0.7.3
+scikit-learn>=1.0.0
+numpy>=1.21.0
+sentence-transformers>=2.2.0
+datasets>=2.0.0
