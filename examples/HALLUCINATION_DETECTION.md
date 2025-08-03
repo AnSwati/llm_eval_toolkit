@@ -20,7 +20,7 @@ The LLM Evaluator implements several complementary approaches to detect hallucin
 
 Uses Natural Language Inference (NLI) models to detect contradictions between the generated text and the reference text. The implementation supports two NLI models:
 
-#### Default: `facebook/bart-large-mnli`
+#### Default: `cross-encoder/nli-deberta-v3-small`, large could also be used-  `facebook/bart-large-mnli`
 
 ```python
 # Default model
@@ -110,16 +110,7 @@ entity_hallucination = results["Entity_Hallucination"]
 - **Numerical_Hallucination**: Proportion of numbers in the generated text not found in the reference (0-1)
 - **Semantic_Similarity**: Overall semantic alignment between texts (0-1, higher means more similar)
 
-## Limitations
 
-1. The entity extraction uses regex patterns rather than a full NER model, which may miss some entities or incorrectly identify others.
-2. The NLI model may struggle with complex or nuanced statements.
-3. Numerical comparison is based on exact matches, so different formats of the same number (e.g., "one million" vs "1,000,000") will be considered different.
-4. The method works best when the reference text is comprehensive and covers all the information that should be in the response.
-
-## Future Improvements
-
-Potential enhancements for future versions:
 
 1. Integration with specialized NER models for better entity extraction
 2. Support for domain-specific hallucination detection (medical, legal, etc.)
