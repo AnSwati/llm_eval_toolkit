@@ -8,7 +8,7 @@ name = "llm-eval-toolkit"
 version = "1.0.3"
 description = "A comprehensive evaluation toolkit for Large Language Models"
 readme = "README.md"
-license = "MIT"  # Simple SPDX expression instead of table
+license = "MIT"  
 authors = [
     {name = "Swati Tyagi", email = "swatyagi@udel.edu"}
 ]
