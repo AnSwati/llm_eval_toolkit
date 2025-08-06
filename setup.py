@@ -21,15 +21,15 @@ class PostInstallCommand(install):
     
     def setup_models_with_caching(self):
         """Download models with smart caching."""
-        print("🚀 Setting up LLM Evaluator models with caching...")
+        print("Setting up LLM Evaluator models with caching...")
         
         # Small, fast models - total ~890MB vs 2.1GB+
         models_to_download = [
-            "cross-encoder/nli-deberta-v3-small",        # ~150MB - NLI tasks
-            "martin-ha/toxic-comment-model",             # ~250MB - Hate detection  
-            "distilbert-base-multilingual-cased",       # ~500MB - Multilingual BERT
-            "sentence-transformers/all-MiniLM-L6-v2",   # ~90MB - Embeddings
-            "gpt2",                                      # ~500MB - Perplexity calculation
+            "cross-encoder/nli-deberta-v3-small",       
+            "martin-ha/toxic-comment-model",           
+            "distilbert-base-multilingual-cased",       
+            "sentence-transformers/all-MiniLM-L6-v2",   
+            "gpt2",                                     
         ]
         
         try:
